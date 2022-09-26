@@ -1,0 +1,41 @@
+CREATE TABLE LoginUsers
+(
+	userID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	userLogin NVARCHAR(20) NOT NULL,
+	userPassword NVARCHAR(20) NOT NULL,
+	userIsAdministrator BIT NOT NULL DEFAULT 0
+);
+
+GO
+CREATE TABLE TrainRoots
+(
+	trainRootID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	trainRootName NVARCHAR(100) NOT NULL
+);
+
+GO
+CREATE TABLE TrainTypes
+(
+	trainTypeID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	trainTypeName NVARCHAR(20) NOT NULL,
+
+);
+
+CREATE TABLE TrainSchedules
+(
+	trainScheduleID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	trainScheduleName NVARCHAR(100) NOT NULL,
+
+);
+
+GO
+CREATE TABLE Trains
+(
+	trainID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	trainDepartureTime TIME NOT NULL,
+	trainArrivalTime TIME NOT NULL,
+	trainRootID INT FOREIGN KEY REFERENCES TrainRoots(trainRootID),
+	trainTypeID INT FOREIGN KEY REFERENCES TrainTypes(trainTypeID),
+	trainScheduleID INT FOREIGN KEY REFERENCES TrainSchedules(trainScheduleID),
+
+);

@@ -2,19 +2,75 @@
     x:Class="Railway_ticketing_system.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Railway_ticketing_system"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Railway_ticketing_system"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
 
     <Grid Background="#FF4A2E98">
-        <TextBlock HorizontalAlignment="Left" Margin="452,430,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top" FontSize="48" Height="74" Width="165"/>
-        <TextBlock HorizontalAlignment="Left" Margin="422,540,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" FontSize="48" Height="74" Width="187"/>
-        <TextBox HorizontalAlignment="Left" Margin="718,430,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="48" Width="792" InputScope="Password"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="718,540,0,0" VerticalAlignment="Top" FontSize="48" Width="792" InputScope="Password"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,889,0,0" TextWrapping="Wrap" Text="Вы здесь впервые?" VerticalAlignment="Top" FontSize="36" PointerPressed="TextBlock_PointerPressed"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="55" Height="108" Width="1473"><Run Text="Добро пожаловать в "/><Run Text="систему. Пожалуйста, авторизуйтесь"/><Run Text=":"/></TextBlock>
+        <TextBlock
+            Width="165"
+            Height="74"
+            Margin="360,276,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="48"
+            Text="Логин:"
+            TextWrapping="Wrap" />
+        <TextBlock
+            Width="187"
+            Height="74"
+            Margin="330,440,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="48"
+            Text="Пароль:"
+            TextWrapping="Wrap" />
+        <TextBox
+            Width="972"
+            Height="105"
+            Margin="626,255,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="55"
+            InputScope="Password"
+            PlaceholderText=""
+            Text=""
+            TextWrapping="Wrap" />
+        <PasswordBox
+            Width="972"
+            Height="105"
+            Margin="626,419,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="55"
+            InputScope="Password" />
+        <TextBlock
+            Margin="0,889,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="36"
+            PointerPressed="TextBlock_PointerPressed"
+            Text="Вы здесь впервые?"
+            TextWrapping="Wrap" />
+        <TextBlock
+            Width="1473"
+            Height="108"
+            Margin="0,49,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="55"
+            TextWrapping="Wrap"><Run Text="Добро пожаловать в " /><Run Text="систему. Пожалуйста, авторизуйтесь" /><Run Text=":" /></TextBlock>
+        <Button
+            Width="424"
+            Height="127"
+            Margin="0,583,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Вход"
+            FontSize="72" />
 
     </Grid>
 </Page>

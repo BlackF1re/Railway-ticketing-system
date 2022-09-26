@@ -26,5 +26,11 @@ namespace Railway_ticketing_system
         {
             this.InitializeComponent();
         }
+
+        private void RegistrationCancellingButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+
+        }
     }
 }

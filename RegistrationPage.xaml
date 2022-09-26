@@ -21,7 +21,8 @@
         <TextBox x:Name="LnameEntry" HorizontalAlignment="Left" Margin="601,677,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="986" FontSize="36" Height="70"/>
         <PasswordBox x:Name="RegistrationPwdEntry" HorizontalAlignment="Left" Margin="601,234,0,0" VerticalAlignment="Top" Width="986" FontSize="36" Height="70"/>
         <PasswordBox x:Name="RegistrationPwdEntry_repeated" HorizontalAlignment="Left" Margin="601,345,0,0" VerticalAlignment="Top" Width="986" FontSize="36" Password="" Height="70" RenderTransformOrigin="0.5,0.5"/>
-        <Button x:Name="MakeRegistrationButton" Content="Зарегистрироваться" Margin="602,798,0,0" VerticalAlignment="Top" FontSize="48" Width="483"/>
+        <Button x:Name="MakeRegistrationButton" Content="Зарегистрироваться" Margin="1094,798,0,0" VerticalAlignment="Top" FontSize="48" Width="483" Height="105"/>
+        <Button x:Name="RegistrationCancellingButton" Content="Отмена" Margin="136,798,0,0" VerticalAlignment="Top" FontSize="48" Width="483" Height="105" Click="RegistrationCancellingButton_Click"/>
 
     </Grid>
 </Page>

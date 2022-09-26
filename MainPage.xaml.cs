@@ -30,8 +30,7 @@ namespace Railway_ticketing_system
 
         private void TextBlock_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(RegistrationPage));
-
+            Frame.Navigate(typeof(RegistrationPage));
         }
     }
 }
